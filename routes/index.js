@@ -16,14 +16,14 @@ router.get('/', function(req, res, next) {
           });
           const context = await browser.newContext();
           const page = await context.newPage();
-          await page.goto('http://whatsmyuseragent.org/');
-          await page.screenshot({
-               path: `public/images/chromium.png`
-          });
+          await page.goto('https://www.amazon.es/dp/B002ACKG8C?th=1');
+          
+          var dd = await page.content()
+          
           await browser.close();
           
           
-          res.send("<img src='/public/images/chromium.png' > <h1> hello </h1>");               
+          res.send(dd);               
           
      })();
 
