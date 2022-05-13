@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<head>
+     <title></title>  
+     <meta name="viewport" content="width=device-width">
+     <link rel="stylesheet" href="/bootstrap.css">
+</head>
+<body>
+     <h1 align="center">Enter URL</h1>
+
+
+     <div class="container mt-5">
+          <form method="post" action="/scrape" class="flex justify-content-center " >
+               <input name="link" type="url" required class="form-group form-control mb-2">
+               <input type="submit" class="form-group btn btn-primary ">
+          </form>
+
+     </div>
+
+
+
+
+
+</body>
 </html>
