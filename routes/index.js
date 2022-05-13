@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
           });
           const context = await browser.newContext();
           const page = await context.newPage();
-          await page.goto('https://www.amazon.es/dp/B002ACKG8C?th=1');
+          await page.goto('https://www.amazon.es/dp/B002ACKG8C');
           
           var dd = await page.content()
           
