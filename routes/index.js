@@ -16,6 +16,7 @@ router.get('/', function(req, res, next) {
 
 
 
+
 router.post("/scrape", async (req, res) => {
 
      
@@ -24,7 +25,7 @@ router.post("/scrape", async (req, res) => {
 
 
      try {
-          const browser = await chromium.launch({
+          const browser = await chromium.launch({				
                chromiumSandbox: false
           });
 
