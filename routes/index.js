@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
 
 
 router.get("/musty", (req,res) => {
-	res.send("Musty is cool")
+	res.render("hello")
 })
 
 
