@@ -1,8 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const {
-     chromium
-} = require("playwright-chromium");
+const { chromium } = require("playwright-chromium");
 
 
 
@@ -13,6 +11,15 @@ router.get('/', function(req, res, next) {
      res.render("index.ejs");
 
 });
+
+
+
+
+
+router.get("/musty", (req,res) => {
+	res.send("Musty is cool")
+})
+
 
 
 
